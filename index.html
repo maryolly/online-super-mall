@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Super Mall – Your Local Marketplace</title>
+  <!-- Link to the main stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-at9h07P2m6pFjwAIZtArff8l9eXktzntwa68OJi5uS4nddMW6Mv7HjV96C3e8SjlSCVH5eUkB1EV9KxFlP8vUw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <div class="container nav-container">
+      <a href="#" class="logo">Super Mall</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#vendors">Vendors</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <h1>Your Local Super Mall, Online</h1>
+          <p>Shop a world of products and services from nearby businesses – hair care, body products, barbers, phone repair and much more – all under one virtual roof.</p>
+          <div class="hero-buttons">
+            <a href="#features" class="btn btn-primary">Explore Marketplace</a>
+            <a href="#vendors" class="btn btn-secondary">Become a Vendor</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="images/hair_products.jpg" alt="Hair care products on a shelf">
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container about-content">
+        <div class="about-image">
+          <img src="images/barber_shop.jpg" alt="Barber cutting a customer's hair">
+        </div>
+        <div class="about-text">
+          <h2>About Our Marketplace</h2>
+          <p>The Online Super Mall is a <strong>multi‑vendor marketplace</strong> designed to bring together local merchants and service providers. It connects buyers with many individual sellers, allowing them to list and sell their products or services, while the platform charges a small transaction fee<sup id="cite-1"><a href="#footnote1">[1]</a></sup>.</p>
+          <p>Unlike traditional e‑commerce stores that serve a single seller, our platform is two‑sided: buyers and sellers each have dedicated experiences. Vendors have the freedom to create, price and deliver their offerings, while the marketplace provides secure payment, user profiles, reviews and administrative tools<sup id="cite-2"><a href="#footnote2">[2]</a></sup>.</p>
+          <p>For buyers, this means less friction when shopping: a wider choice of products, trusted reviews and the convenience of a single platform<sup id="cite-5"><a href="#footnote5">[5]</a></sup>. Sellers gain access to a large audience, network effects and tools like dashboards, inventory management and dispute resolution that help them focus on what they do best<sup id="cite-3"><a href="#footnote3">[3]</a></sup>. We believe a vibrant marketplace creates value for everyone.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+      <div class="container">
+        <h2>Marketplace Features</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <i class="fa-solid fa-shop"></i>
+            <h3>Local Variety</h3>
+            <p>Discover a diverse range of products and services – hair and body products, barbers, phone repair, travel bookings and more – sourced from local businesses.</p>
+          </div>
+          <div class="feature-card">
+            <i class="fa-solid fa-palette"></i>
+            <h3>Customizable Storefronts</h3>
+            <p>Vendors have the freedom to design their own shop pages with custom colours, logos and promotional banners to reflect their brand.</p>
+          </div>
+          <div class="feature-card">
+            <i class="fa-solid fa-lock"></i>
+            <h3>Secure &amp; Trustworthy</h3>
+            <p>Our platform provides secure payments, ratings, reviews and profiles to help customers shop with confidence.</p>
+          </div>
+          <div class="feature-card">
+            <i class="fa-solid fa-chart-line"></i>
+            <h3>Seller Dashboard</h3>
+            <p>Built‑in dashboards let vendors manage inventory, track orders and access analytics from one place<sup id="cite-3b"><a href="#footnote3">[3]</a></sup>.</p>
+          </div>
+          <div class="feature-card">
+            <i class="fa-solid fa-users"></i>
+            <h3>Network Effects</h3>
+            <p>The more sellers and buyers who join, the more valuable the marketplace becomes for everyone<sup id="cite-4"><a href="#footnote4">[4]</a></sup>.</p>
+          </div>
+          <div class="feature-card">
+            <i class="fa-solid fa-search"></i>
+            <h3>Smart Search</h3>
+            <p>Find shops and services quickly with our interactive search bar. Try typing “hair products” or “phone repair” below.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search Section -->
+    <section id="search-section" class="search-section">
+      <div class="container">
+        <h2>Find What You Need</h2>
+        <p>Search for your favourite products or services from our growing list of vendors.</p>
+        <div class="search-bar">
+          <input type="text" id="search" placeholder="Search products or services…" aria-label="Search products or services">
+          <ul id="suggestions" class="suggestions-list"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vendors Section -->
+    <section id="vendors" class="vendors">
+      <div class="container vendor-content">
+        <div class="vendor-text">
+          <h2>Become a Vendor</h2>
+          <p>Join a thriving marketplace and reach new customers. By listing on our platform, you gain access to built‑in buyer traffic and save on marketing costs. Our infrastructure handles payments, order processing and support, and includes seller dashboards and dispute resolution systems to lighten your workload<sup id="cite-3c"><a href="#footnote3">[3]</a></sup>.</p>
+          <p>Set up your shop, customise it to match your brand, and start selling today. The more sellers join the marketplace, the more customers we attract – a virtuous cycle that benefits everyone<sup id="cite-4b"><a href="#footnote4">[4]</a></sup>.</p>
+        </div>
+        <div class="vendor-form-container">
+          <h3>Sign Up Today</h3>
+          <form id="vendor-form" novalidate>
+            <div class="form-group">
+              <label for="vendor-name">Your Name</label>
+              <input type="text" id="vendor-name" name="vendor-name" required>
+            </div>
+            <div class="form-group">
+              <label for="vendor-email">Email Address</label>
+              <input type="email" id="vendor-email" name="vendor-email" required>
+            </div>
+            <div class="form-group">
+              <label for="business-type">Business Type</label>
+              <select id="business-type" name="business-type" required>
+                <option value="">Select a type</option>
+                <option value="hair">Hair &amp; Body Products</option>
+                <option value="barber">Barber Services</option>
+                <option value="repair">Phone Repair</option>
+                <option value="travel">Travel &amp; Airlines</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="vendor-message">Tell us about your business</label>
+              <textarea id="vendor-message" name="vendor-message" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <p id="form-success" class="form-success" hidden>Thank you! We’ll be in touch soon.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container contact-content">
+        <h2>Contact Us</h2>
+        <p>Have questions or feedback? We'd love to hear from you. Reach out via email at <a href="mailto:info@supermall.example">info@supermall.example</a> or follow us on social media.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer and Footnotes -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Online Super Mall. All rights reserved.</p>
+        <ol class="footnotes">
+          <li id="footnote1">[1] <a href="【710756078655012†L100-L105】" target="_blank">Multi‑vendor marketplaces connect buyers with many individual sellers and charge a fee per transaction</a>. <a href="#cite-1" aria-label="Back to citation 1">↩࿀</a></li>
+          <li id="footnote2">[2] <a href="【710756078655012†L124-L143】" target="_blank">Multi‑vendor websites are two‑sided and require features like user profiles, reviews and secure payments</a>. <a href="#cite-2" aria-label="Back to citation 2">↩࿀</a></li>
+          <li id="footnote3">[3] <a href="【710756078655012†L223-L229】" target="_blank">Marketplaces offer seller dashboards, inventory management and dispute resolution tools</a>. <a href="#cite-3" aria-label="Back to citation 3">↩࿀</a></li>
+          <li id="footnote4">[4] <a href="【710756078655012†L244-L248】" target="_blank">Network effects make the marketplace more valuable as more users join</a>. <a href="#cite-4" aria-label="Back to citation 4">↩࿀</a></li>
+          <li id="footnote5">[5] <a href="【710756078655012†L167-L171】" target="_blank">Buyers benefit from reduced friction, greater choice and trust through ratings and reviews</a>. <a href="#cite-5" aria-label="Back to citation 5">↩࿀</a></li>
+        </ol>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Link to the main JavaScript file -->
+  <script src="js/script.js"></script>
+</body>
+</html>
